@@ -1,0 +1,96 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "51a375b2",
+   "metadata": {
+    "_cell_guid": "b1076dfc-b9ad-4769-8c92-a6c4dae69d19",
+    "_uuid": "8f2839f25d086af736a60e9eeb907d3b93b6e0e5",
+    "execution": {
+     "iopub.execute_input": "2025-05-26T16:04:16.215220Z",
+     "iopub.status.busy": "2025-05-26T16:04:16.214895Z",
+     "iopub.status.idle": "2025-05-26T16:04:16.699528Z",
+     "shell.execute_reply": "2025-05-26T16:04:16.698333Z"
+    },
+    "papermill": {
+     "duration": 0.490012,
+     "end_time": "2025-05-26T16:04:16.701938",
+     "exception": false,
+     "start_time": "2025-05-26T16:04:16.211926",
+     "status": "completed"
+    },
+    "tags": []
+   },
+   "outputs": [
+    {
+     "name": "stdout",
+     "output_type": "stream",
+     "text": [
+      "# 🐍 Python Practice Notebook\n",
+      "This notebook is designed for basic Python practice. You can upload it to GitHub and import it to Kaggle to earn the **GitHub Coder** badge.\n"
+     ]
+    }
+   ],
+   "source": [
+    "import requests\n",
+    "import nbformat\n",
+    "\n",
+    "# GitHub raw URL\n",
+    "url = \"https://raw.githubusercontent.com/abdullahalsady/Kaggle/main/python_practice_for_kaggle_github.ipynb\"\n",
+    "\n",
+    "# Download the notebook content\n",
+    "response = requests.get(url)\n",
+    "response.raise_for_status()\n",
+    "\n",
+    "# Parse the notebook content\n",
+    "notebook_content = nbformat.reads(response.text, as_version=4)\n",
+    "\n",
+    "# Print the notebook title or first cell\n",
+    "print(notebook_content.cells[0]['source'])\n"
+   ]
+  }
+ ],
+ "metadata": {
+  "kaggle": {
+   "accelerator": "none",
+   "dataSources": [],
+   "dockerImageVersionId": 31040,
+   "isGpuEnabled": false,
+   "isInternetEnabled": true,
+   "language": "python",
+   "sourceType": "notebook"
+  },
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.11"
+  },
+  "papermill": {
+   "default_parameters": {},
+   "duration": 6.10757,
+   "end_time": "2025-05-26T16:04:17.225358",
+   "environment_variables": {},
+   "exception": null,
+   "input_path": "__notebook__.ipynb",
+   "output_path": "__notebook__.ipynb",
+   "parameters": {},
+   "start_time": "2025-05-26T16:04:11.117788",
+   "version": "2.6.0"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
